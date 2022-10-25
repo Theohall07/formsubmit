@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+ <html>
+
+ <head>
+     <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+     <title>Theo halls träning pogram - för nybörjare </title>
+     <link rel="stylesheet" href="styles.css" />
+    
+
+ </head>
+
+ <body>
+     <?php
+     sasas
+     ?>
+     <div class="container">
+         <form action="https://formsubmit.co/theo.aoa.hall@gmail.com" method="POST">
+             <h3>
+                 Get In Touch
+             </h3>
+             <input type="text" id="name" placeholder="Your name" required>
+             <input type="email" id="email" placeholder="Email id" required>
+
+             <input type="text" id="phone" placeholder="Phone no." required>
+             <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+             <button type="submit">Send</button>
+         </form>
+     </div>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+     <script>
+         function sendEmail() {
+             Email.send({
+                 Host: "smtp.gmail.com",
+                 Username: "theo.aoa.hall@gmail.com",
+                 Password: "HandbollP07",
+                 To: 'theo.aoa.hall@gmail.com
+          From: document.getElementByIdId("email").value,
+                 Subject: "New contact form Enquiry",
+                 Body: "Name: " + document.getElementByIdId("name").value
+                     + "<br /> Email: " + document.getElementByIdId("email").value
+                     + "<br /> Phone no.: " + document.getElementByIdId("phone").value
+                     + "<br /> message: " + document.getElementByIdId("message").value
+             }).then(
+                 message => alert("message sent succesfully")
+             );
+         }
+     </script>
+ </body>
+
+
+
+
+</html>
